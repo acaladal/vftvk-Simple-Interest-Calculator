@@ -24,7 +24,8 @@ function validatePrincipal(){
     var principal = document.getElementById("principal").value;
     if(principal <= 0) {
         alert("Please enter a positive number");
-        document.getElementById("principal").focus();
-        return null;
+        fname.focus();
+        return false;
     }
+    return true;
 }
