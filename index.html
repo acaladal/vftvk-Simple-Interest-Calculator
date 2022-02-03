@@ -10,7 +10,7 @@
             <h1>Simple Interest Calculator</h1>
             <form action class="mainform">
                 <label for="principal">Amount </label>
-                <input type="number"  id="principal" name="principal">  <br/>
+                <input type="number"  id="principal" name="principal" oninput="validatePrincipal()">  <br/>
                 <label for="rate">Rate </label>
                 <input type="range"  id="rate" min="1" max="20" value="default_val" name="rate" onchange="updateRate()"> 
                 <span id="rate_val"> 

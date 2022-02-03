@@ -7,5 +7,10 @@ h1{color: rgb(128,128,128);font-family: verdana}
     width: 534px;
     padding: 20px;
     border-radius: 25px;
-    align: center;
+    box-align: center;
+    justify-self: auto;
+}
+
+.highlighted {
+    background-color: rgb(254, 248, 81);
 }
