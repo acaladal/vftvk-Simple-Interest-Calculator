@@ -1,4 +1,11 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color: rgb(0,0,0); font-family: arial;color:rgb(255,255,255)}
+h1{color: rgb(128,128,128);font-family: verdana}
 
-
+.maindiv {
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    width: 534px;
+    padding: 20px;
+    border-radius: 25px;
+    align: center;
+}

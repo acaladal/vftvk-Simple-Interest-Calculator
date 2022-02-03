@@ -1,16 +1,42 @@
+<!doctype HTML>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Web App Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <form action class="mainform">
+                <label for="principal">Amount </label>
+                <input type="number"  id="principal" name="principal">  <br/>
+                <label for="rate">Rate </label>
+                <input type="range"  id="rate" min="1" max="20" value="default_val" name="rate" onchange="updateRate()"> 
+                <span id="rate_val"> 
+                    10.25%
+                </span> <br>
+                <label for="years">No. of Years</label>
+                <select id="years" name="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> <br> <br>
+                <button onclick="compute()">Compute Intereset</button> <br>
+                <span id="result">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+                </span><br>
+            </form>
+        </div>
+        <footer>
+            <p> &#169; This Calculator belongs to Alejandro Cálad </p>
+        </footer>
     </body>
 </html>
